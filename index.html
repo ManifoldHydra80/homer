@@ -1,0 +1,44 @@
+<head>
+	<title>THE HOMER SIMPSON JUMPSCARE</title>
+	<script src="collection/1.js"></script>
+	<script>
+		URLGrab=new URL(location.href)
+		DestURL=URLGrab.searchParams.get('url')
+		function changetodest(){
+			Content[Math.floor(Math.random()*Content.length)];
+			PickedContent=Content[Math.floor(Math.random()*Content.length)];
+			open(PickedContent);
+			location=DestURL;
+		}
+		function makelink(){
+		 YourLink=document.getElementsByTagName('input')[0].value
+		 document.getElementsByName('userlink')[0].innerHTML='Here is your link >> https://manifoldhydra80.github.io/homer?url='+YourLink+' <a href="?url='+YourLink+'">Test Link</a>'
+		}
+		if (DestURL){
+			changetodest();
+		}
+	</script>
+</head>
+<body>
+	<noscript><center><p>Please Turn On JavaScript So This Project Can Work</p></center></noscript>
+	<center>
+	<h1>WECOME TO THE HOMER SIMPSON JUMPSCARE</h1>
+	<h2>Try these links below</h2>
+	<p>
+		<a href="?url=https://google.com">google.com</a>
+		<a href="?url=https://youtube.com">youtube.com</a>
+		<a href="?url=https://tiktok.com">tiktok.com</a>
+		<a href="?url=https://costco.com.au">costco.com.au</a>
+		<a href="?url=https://en.wikipedia.org">en.wikipedia.org</a>
+		<a href="?url=https://facebook.com">facebook.com</a>
+		<a href="?url=https://twitter.com">twitter.com</a>
+		<a href="?url=https://disney.fandom.com/">disney.fandom.com</a>
+	</p>
+	<h2>--- OR ---</h2>
+	<h2>Make a link and share it</h2>
+	<p><input placeholder="Enter URL"></input> <button onclick="makelink()">MAKE LINK</button></p>
+	<p name="userlink"></p>
+	<h1>THEN HOMER SIMPSON WILL SHOW!!!</h1>
+	
+	</center>
+</body>
